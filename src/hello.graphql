@@ -1,0 +1,10 @@
+# Simple API:
+# https://api.graph.cool/simple/v1/cjp6z6dvs7dxv0188yhxiubh9
+
+type HelloPayload {
+  message: String!
+}
+
+extend type Query {
+  hello(name: String): HelloPayload
+}
